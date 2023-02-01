@@ -1,2 +1,2 @@
-# send_email_using_python
-使用smtp授权码
+# some useful python code.
+- send email use smtp
