@@ -1,0 +1,4 @@
+
+def ntfy_to_you(subscribed_link,subject,data_content): #需要填入ntfy的订阅链接形如https://ntfy.sh/xxxxx(或者你可以自行搭建)，具体使用方法参见ntfy.sh
+        requests.post(url=subscribed_link,
+                      data=data_content.encode(encoding='utf-8'),headers={ "Title": subject.encode("utf-8").decode("latin") }) #data_content是正文内容，headers中Title的值是消息标题。
